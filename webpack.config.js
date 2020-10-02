@@ -9,5 +9,16 @@ module.exports = {
     },
     devServer: {
         contentBase: outputPath,
+    },
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader'
+                ]
+            }
+        ]
     }
 };
