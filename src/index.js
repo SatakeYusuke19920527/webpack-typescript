@@ -1,5 +1,5 @@
 import _ from 'lodash'
-import { nijou, NAME } from './utilites'
+import style from './style.css'
 
 function component() {
     const element = document.createElement('div')
@@ -8,6 +8,5 @@ function component() {
     return element
 }
 
-console.log(nijou(100), '=====', NAME)
-
 document.body.appendChild(component())
+document.body.classList.add('haikei')
